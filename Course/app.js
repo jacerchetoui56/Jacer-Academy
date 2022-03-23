@@ -6,6 +6,7 @@ const light = document.querySelector(".fa-sun")
 const toplogolight = document.querySelector(".lightlogo")
 const toplogodark = document.querySelector(".darklogo")
 const scrolltotop = document.querySelector(".scrolltop")
+const home = document.querySelector("#home")
 
 dark.addEventListener('click',()=>{
     body.classList.toggle("dark")
@@ -14,6 +15,7 @@ dark.addEventListener('click',()=>{
     toplogodark.classList.toggle("darkmode")
     toplogolight.classList.toggle("darkmode")
     scrolltotop.classList.toggle("dark")
+    home.classList.toggle("dark")
 })
 
 window.onscroll = () =>{

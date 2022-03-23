@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: rgb(243, 242, 242);
+}
 body, #sell{
     transition: 0.4s ease;
 }
@@ -15,7 +18,113 @@ li {
     list-style: none;
 }
 
+/* !--------- home ---------------  */
+#home{
+    min-height: 90vh;
+    position: relative;
+}
+.homecontainer{
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    margin: 2rem auto;
+}
+.text {
+    flex: 1;
+}
+.text h1{
+    font-family: 'Fredoka', sans-serif;
+    font-size: 2.1rem;
+}
+.text h1 span{
+    font-size: 3.1rem;
+}
+.text p{
+    padding-top: 1.5rem;
+    color: rgb(100, 100, 100);
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.text p span{
+    font-size: 1.7rem;
+    font-weight: bold;
+  background: -webkit-linear-gradient(45deg,rgb(69, 13, 221), rgb(196, 15, 15),rgb(243, 131, 2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.homecontainer img{
+    width: 35rem;
+    animation: infinite bambi 5s  ease-in-out;
+    /* transition: ; */
+}
+@keyframes bambi {
+   0% , 100%{
+       transform: translateY(0%);
+   }
+   50%{
+       transform: translateY(15%);
+   }
+}
+
+.fleche-bas{
+    position: absolute;
+    bottom: 5.5rem;
+    right: 50%;
+    transform: translateX(50%);
+    font-size: 1.7rem;
+    animation: down infinite 2s;
+}
+@keyframes down {
+    /* 0%,100%,50%{
+        transform: translateY(0%);
+    }
+    25%{
+        transform: translateY(100%);
+    }
+    75%{
+        transform: translateY(100%);
+    } */
+    0%, 10% , 20% ,50% ,80% , 100%{
+        transform: translateY(0%);
+    }
+    40%,60%{
+        transform: translateY(100%);
+    }
+}
+
+@media (min-width : 995px){
+    .homecontainer{
+        width: 980px;
+    }
+}
+@media (max-width : 995px){
+    .homecontainer .image{
+        display: none;
+    }
+    
+    .homecontainer{
+       width: 90%;
+       position: absolute;
+       right: 5%;
+       top: 15%;
+    }
+    .homecontainer .text{
+        text-align: center;
+        width: 100%;
+    }
+}
+@media (max-width : 550px){
+    .homecontainer {
+        width: 95%;
+        right: 2.5%;
+    }
+}
+
+/*! ------------------------------ */
+
 .darkmodetoggle{
+    font-size: 1.3rem;
     z-index: 2;
     position: fixed;
     left: 0;
@@ -70,6 +179,10 @@ li {
 /* !---------------------- */
 
 header{
+    /* position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2; */
     min-height: 10vh;
     background-color: #f1f1f157;
     display: flex;

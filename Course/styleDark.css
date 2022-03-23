@@ -57,7 +57,32 @@ body.dark header .links a:hover {
     right: 1.5rem;
 }
 
+/* !------------- home ----------- */
 
+
+#home.dark .text p{
+ 
+    color: #a7a7a7;
+   
+}
+#home.dark .text h1{
+    color: #CDCFC1;
+}
+#home.dark .text p span{
+
+    background: 
+    -webkit-linear-gradient(45deg,rgb(189 173 231), rgb(255 44 44),rgb(2 232 243));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+#home.dark .fleche-bas{
+    color: #C2C6C9;
+}
+
+
+/* !--------------- */
 
 
 /* !sell section ------------------ */
