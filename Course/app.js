@@ -7,6 +7,14 @@ const toplogolight = document.querySelector(".lightlogo")
 const toplogodark = document.querySelector(".darklogo")
 const scrolltotop = document.querySelector(".scrolltop")
 const home = document.querySelector("#home")
+const burger = document.querySelector(".burger")
+const links = document.querySelector("header .links")
+
+burger.addEventListener('click',()=>{
+    links.classList.toggle("slide")
+    burger.classList.toggle("slide")
+
+})
 
 dark.addEventListener('click',()=>{
     body.classList.toggle("dark")
