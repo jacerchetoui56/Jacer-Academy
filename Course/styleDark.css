@@ -17,7 +17,7 @@ li {
 }
 
 body.dark header{
-    background-color: #2b383e;
+    background-color: #202332;
     box-shadow: 0 0 7px -3px #efefefa6;
 }
 
@@ -96,7 +96,7 @@ body.dark header .links a:hover {
 
 }
 #sell.dark .selloption{
-    background-color: #454f55;
+    background-color: #0000008a;
 }
 #sell.dark h1{
     color: #CDCFD1;
