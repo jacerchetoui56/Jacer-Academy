@@ -33,6 +33,12 @@ footer .contact-text h1{
     margin-bottom: 1rem;
     font-weight: 600;
 }
+footer .contact-text a{
+    color: #b5b4c3;
+}
+footer .contact-text a:hover{
+    text-decoration: underline;
+}
 
 footer .contact .socials i{
     padding: .6rem;
