@@ -9,7 +9,7 @@ html {
     scroll-behavior: smooth;
 }
 body{
-    background-color: #e4e0e0ad;
+    /* background-color: #e4e0e0ad; */
     
 }
 body, #sell{
@@ -146,6 +146,8 @@ li {
     color: black;
     box-shadow:0 0 10px -2px rgb(43, 43, 43) ;
 }
+
+
 
 
 /* !---------------------- */
@@ -459,6 +461,9 @@ header .links a:hover {
 
 
 @media (max-width : 780px){
+    html{
+        font-size: 80%;
+    }
     header{
         text-align: center;
        /* overflow: hidden;

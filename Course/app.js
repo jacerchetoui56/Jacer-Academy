@@ -23,3 +23,24 @@ window.onscroll = () =>{
 scrolltotop.addEventListener('click',()=>{
     window.scrollTo({top:0 , behavior : "smooth"})
 })
+
+// !---------------- increasing numbers
+
+const stats = document.querySelector("#stats")
+const values = document.querySelectorAll("#stats .value")
+let start = false ;
+
+window.onscroll = ()=>{
+    if(window.scrollY>=stats.offsetTop - 250){
+        if(!start) values.forEach((val) => startCounting(val))
+        start=true
+    }
+}
+
+function startCounting(el){
+    let goal = el.dataset.goal
+    let count = setInterval(() => {
+        el.textContent++;
+        if(el.textContent == goal) clearInterval(count)
+    }, 2000 / goal);
+}
