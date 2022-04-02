@@ -1,0 +1,125 @@
+#courses{
+    min-height: 90vh;
+    background-image: linear-gradient(to right bottom, #1F193D,#544161,#6C6171,#6A5359);
+    color: white;
+}
+
+.courses-container{
+    width: 900px;
+    min-height: 90vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 4rem;
+}
+
+.front {
+    background-image: url(../images/front.png);
+    background-size: 100% 100%;
+}
+.back {
+    background-image: url(../images/back.png);
+    background-size: 100% 100%;
+}
+.ai {
+    background-image: url(../images/ai.jpeg);
+    background-size: 100% 100%;
+}
+
+.front , .back , .ai{
+    flex:1;
+    min-height: 23rem;
+    overflow: hidden;
+}
+
+.slide{
+    position: relative;
+    min-height: 23rem;
+    z-index: 3;
+    background-color: rgba(28,185,218,.85);
+    transform: translateX(-102%);
+    opacity: .5;
+    transition: .45s;
+}
+
+.front:hover .slide, .back:hover .slide, .ai:hover .slide{
+    transform: translateX(0);
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+.slide .buttons{
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1rem;
+}
+
+.slide h2{
+    width: fit-content;
+    border-radius: 20px;
+    font-weight: 400;
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    background-color: #f36;
+    border: solid 2px transparent;
+    padding:.4rem 1.7rem;
+    transition: .3s;
+}
+.slide h2:hover {
+    background-color: transparent;
+    border: solid 2px white;
+    cursor: pointer;
+}
+
+.slide h3{
+    width: fit-content;
+    padding:0.5rem 1.1rem;
+    margin-top: .7rem;
+    font-weight: 400;
+    font-family: sans-serif;
+    font-size: 1rem;
+    border: solid 2px white;
+    border-radius: 20px;
+    transition: .1s;
+}
+
+.slide h3:hover{
+    background-color: #f36;
+    border: solid 2px transparent;
+    cursor: pointer;
+}
+
+
+.slide .description{
+    position: absolute;
+    top: 5rem;
+    left:1rem;
+}
+.slide .description li{
+    margin-bottom: .5rem;
+    font-family: sans-serif;
+    font-size: 1.05rem;
+}
+.slide .description li span{
+    margin-left: .5rem;
+}
+
+.slide .description li .fa-laptop-code{
+    font-size: 15px;
+}
+.slide .description li:nth-child(4) i{
+    margin-right: .5rem;
+}
+
+
+
+
+/* !---------- media querry ----------------- */
+
+@media (max-width: 1020px){
+    .courses-container{
+        width: 85%;
+    }
+}

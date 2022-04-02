@@ -35,6 +35,9 @@ li {
     margin: 2rem auto 2rem;
     transform: translateY(-7%);
 }
+.text b{
+    color: #e9e9e9;
+}
 .text {
     flex: 1;
 }
@@ -196,7 +199,7 @@ header .links.slide{
     position: absolute;
     right: 10vw;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 .burger:hover {
     cursor: pointer;
@@ -514,6 +517,15 @@ header .links a:hover {
 
 
 @media (max-width : 550px){
+    .homecontainer h1 span{
+        font-size: 3.7rem;
+    }
+    .homecontainer .text p{
+        font-size: 1.6rem;
+    }
+    .homecontainer p span{
+        font-size: 2.3rem;
+    }
     #sell .title{
         font-size: 2rem;
         margin-bottom: 3rem;

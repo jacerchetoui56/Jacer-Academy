@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-image: linear-gradient(to right bottom, #1F193D,#544161,#4e4652,#6A5359);
+    background-image: linear-gradient(to right bottom, #0c0724,#25182e,#4e4652,#6A5359);
     font-family: sans-serif;
     position: relative;
 }
@@ -11,8 +11,10 @@
 #stats .split-top {
     position: absolute;
     top: 0;
-    height: 20rem;
-    width: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    height: 2rem;
+    width: 4rem;
 }
 #stats .split-bottom{
     position: absolute;
