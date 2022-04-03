@@ -135,20 +135,19 @@ li {
     z-index: 2;
     position: fixed;
     bottom: 10vh;
-    right: -3rem;
+    right: -4rem;
     font-size: 1.5rem;
     border-radius: 50%;
-    background-color: #31373C;
+    background-image: linear-gradient(#5600ff,#9015b8);
     color: white;
     box-shadow:0 0 10px -2px rgb(43, 43, 43) ;
     padding: 10px 15px;
     transition: ease .5s;
 }
-.scrolltop.dark{
-    background-color: white;
-    color: black;
-    box-shadow:0 0 10px -2px rgb(43, 43, 43) ;
+.scrolltop.show{
+    right: 1rem;
 }
+
 
 
 
@@ -191,7 +190,7 @@ header .links{
     align-items: center;
 }
 
-header .links.slide{
+header .links.slide-burger{
     transform: translateX(0);
 }
 .burger{
@@ -204,9 +203,10 @@ header .links.slide{
 .burger:hover {
     cursor: pointer;
 }
-.burger.slide{
+.burger.slide-burger{
     z-index: 4;
     color: #cdcfc1;
+    position: fixed;
 }
 
 header .links a{
@@ -218,7 +218,7 @@ header .links a{
     color: white;
 }
 
-header .links .free-trial{
+header .links .chose-course{
     width: fit-content;
     border-radius: 30px ;
     padding: .5rem 1rem ;
@@ -230,217 +230,14 @@ header .links .free-trial{
     font-size: 1.1rem;
     letter-spacing: 2px;
 }
-header .free-trial:hover{
+header .chose-course:hover{
     background-color: #f36;
+    color: black !important;
 }
 
 header .links a:hover {
-    color: rgb(0, 0, 0);
+    color: #f36;
 }
-
-
-/* !sell--------------- */
-#sell .title{
-    font-size: 3rem;
-    font-family: 'Fredoka', sans-serif;    
-    letter-spacing: 4px;
-    width: 100%;
-    text-align: center;
-    margin: 2rem auto 3.5rem;
-    text-shadow: 0 5px 10px rgb(51, 51, 51);
-}
-.sellcontainer{
-    min-height: 80vh;
-    width: 90%;
-    margin: 0 auto 1.5rem;
-    display: flex;
-    justify-content: center;
-
-    /* align-items: center; */
-    /* gap: 1rem; */
-}
-#sell h1{
-    padding: 1rem 0 .5rem;
-    text-align: center;
-    font-size: 1.5rem;
-    color: #3c464c;
-}
-#sell i{
-    color: #3c464c
-}
-
-
-.selloption{
-    flex-grow:1 ;
-    background-color: white;
-    font-family: sans-serif;
-    position: relative;
-}
-
-
-.selloption .popular{
-    position: absolute;
-    color: white;
-    font-weight: 700;
-    font-size: 1.1rem;
-    background-color: #5EB4EF;
-    width:90%;
-    transform: translateX(5%);
-    text-align: center;
-    padding: .35rem 0;
-    top: -1.7rem;
-}
-.selloption .popular span{
-    animation: cligne 2s infinite;
-
-}
-@keyframes cligne {
-    0%,100%{
-        color: #f2020294;;
-    }
-    50%{
-        color: #3C464C;
-    }
-}
-
-/* .selloption:nth-child(1) , .selloption:nth-child(3){
-    border-top: solid 2px #b0bcc8;
-    border-bottom: solid 2px #b0bcc8;
-}
-.selloption:nth-child(2) , .selloption:nth-child(4){
-    border-top: solid 2px #9fbcfc;
-    border-bottom: solid 2px #9fbcfc;
-} */
-.selloption:nth-child(1)::before {
-    content: "";
-    position: absolute;
-    height: 2px;
-    background-color: #b0bcc8;
-    width: 90%;
-    top: 0;
-    right: 5%;
-}
-.selloption:nth-child(2)::before , .selloption:nth-child(4)::before{
-    content: "";
-    position: absolute;
-    height: 2px;
-    background-color: #9fbcfc;
-    width: 90%;
-    top: 0;
-    right: 5%;
-}
-.selloption:nth-child(1)::after , .selloption:nth-child(3)::after{
-    content: "";
-    position: absolute;
-    height: 2px;
-    background-color: #b0bcc8;
-    width: 90%;
-    bottom: 0;
-    right: 5%;
-}
-.selloption:nth-child(2)::after , .selloption:nth-child(4)::after{
-    content: "";
-    position: absolute;
-    height: 2px;
-    background-color: #9fbcfc;
-    width: 90%;
-    bottom: 0;
-    right: 5%;
-}
-.selloption:not(.selloption:first-child , .selloption:nth-child(3)){
-    box-shadow: -4px 0px 16px -8px #b9b9b9;
-}
-
-
-.selloption i:not(.fa-circle-check){
-    text-align: center;
-    width: 100%;
-    font-size: 2.4rem;
-    margin: 1rem 0 .5rem;
-}
-.selloption:nth-child(3){
-    box-shadow: -4px 0px 16px -8px #b9b9b9;
-}
-
-.price{
-    width: 60%;
-    margin:2rem auto 1.7rem;
-    text-align: center;
-    padding: .5rem;
-    border-radius: 30px;
-    color: white;
-}
-#sell .selloption:nth-child(1) .price{
-    background-color: #9aa7b8;
-}
-#sell .selloption:nth-child(1) .price:hover{
-    background-color: #868f9b;
-    cursor: pointer;
-}
-#sell .selloption:nth-child(2) .price{
-    background-color: #87aafa;
-}
-#sell .selloption:nth-child(2) .price:hover{
-    background-color: #6e98fc;
-    cursor: pointer;
-}
-#sell .selloption:nth-child(3) .price{
-    background-color: #5EB4EF;
-}
-#sell .selloption:nth-child(3) .price:hover{
-    background-color: #43a8ec;
-    cursor: pointer;
-}
-#sell .selloption:nth-child(4) .price{
-    background-color: #57CAD5;
-}
-#sell .selloption:nth-child(4) .price:hover{
-    background-color: #2facb8;
-    cursor: pointer;
-}
-#sell .selloption:nth-child(1) .fa-circle-check{
-    color: #9aa7b8;
-}
-#sell .selloption:nth-child(2) .fa-circle-check{
-    color: #87aafa;
-}
-#sell .selloption:nth-child(3) .fa-circle-check{
-    color: #5EB4EF;
-}
-#sell .selloption:nth-child(4) .fa-circle-check{
-    color: #57CAD5;
-}
-.price h3{
-    font-weight: 300;
-    font-size: 1rem;
-}
-.price span{
-    font-size: 2.3rem;
-    font-family: sans-serif;
-    font-weight: 400;
-    
-}
-
-.features{
-    width: 100%;
-}
-.features ul li{
-    font-size: .9rem;
-    padding: 1.3rem 0;
-}
-.features ul li:nth-child(2) ,.features ul li:nth-child(4){
-    background-color: #f0f1f3;    
-}
-
-
-.fa-circle-check{
-    margin-left: 1.5rem;
-    margin-right: 1rem;
-}
-
-
-/* !------------ */
-
 
 
 
@@ -486,7 +283,7 @@ header .links a:hover {
        transition: ease .5s;
         z-index: 3;
         min-height: 100vh;
-        position: absolute;
+        position: fixed;
         max-width: 40vw;
         min-width: 40vw;
         top: 0;
@@ -495,15 +292,24 @@ header .links a:hover {
         display: flex;
         flex-direction: column;
         justify-content: start;
-        background-color: #454F55;
-        padding-top: 10vh;
+        align-items: flex-start;
+        background-image: linear-gradient(to right,#281750,#3e1f60e0);
+        padding-top: 15vh;
         box-shadow: -1px 0 13px -3px black;
-
+    }
+    body.blur  #home, body.blur  #courses, body.blur  #stats, body.blur footer, body.blur header .darklogo{
+        filter: blur(6px);
+    }
+    body.blur {
+        max-height: 100vh;
+        overflow-y: hidden;
     }
     header .links a{
         color: white;
+        font-size: 1.5rem;
+        padding-left: 3rem;
     }
-    header .links .free-trial{
+    header .links .chose-course{
         display: none;
     }
    

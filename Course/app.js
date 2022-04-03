@@ -8,17 +8,15 @@ const burger = document.querySelector(".burger")
 const links = document.querySelector("header .links")
 
 burger.addEventListener('click',()=>{
-    links.classList.toggle("slide")
-    burger.classList.toggle("slide")
-
+    links.classList.toggle("slide-burger")
+    burger.classList.toggle("slide-burger")
+    body.classList.toggle("blur")
 })
 
+console.log(scrolltotop)
 
 
-window.onscroll = () =>{
-    if(document.documentElement.scrollTop > 900) scrolltotop.classList.add("show")
-    else scrolltotop.classList.remove("show")
-}
+
 
 scrolltotop.addEventListener('click',()=>{
     window.scrollTo({top:0 , behavior : "smooth"})
@@ -35,6 +33,11 @@ window.onscroll = ()=>{
         if(!start) values.forEach((val) => startCounting(val))
         start=true
     }
+    if(window.scrollY > 1700){
+        scrolltotop.classList.add("show")
+    }
+    else scrolltotop.classList.remove("show")
+    
 }
 
 function startCounting(el){

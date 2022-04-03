@@ -1,15 +1,35 @@
 #courses{
-    min-height: 90vh;
+    min-height: 80vh;
     background-image: linear-gradient(to right bottom, #1F193D,#544161,#6C6171,#6A5359);
     color: white;
 }
 
+#courses h1{
+    text-align: center;
+    padding: 4rem 0 2rem;
+    margin-bottom: 2rem;
+    font-family: sans-serif;
+    /* font-size: 2rem; */
+    color: white;
+    position: relative;
+}
+#courses h1::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 3px;
+    background-color: #f36;
+    width: 5rem;
+    transform: translate(-50%,-.5rem);
+    background-image: linear-gradient(to right, #f36 48%,#52445B 48%,#52445B 52%,#48BADA 40%);
+}
 .courses-container{
-    width: 900px;
-    min-height: 90vh;
+    width: 950px;
+    min-height: 80vh;
     margin: 0 auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     gap: 4rem;
 }
@@ -32,6 +52,9 @@
     min-height: 23rem;
     overflow: hidden;
 }
+.front:hover , .back:hover , .ai:hover{
+    cursor: pointer;
+}
 
 .slide{
     position: relative;
@@ -46,7 +69,6 @@
 .front:hover .slide, .back:hover .slide, .ai:hover .slide{
     transform: translateX(0);
     opacity: 1;
-    cursor: pointer;
 }
 
 
@@ -82,13 +104,36 @@
     font-size: 1rem;
     border: solid 2px white;
     border-radius: 20px;
-    transition: .1s;
+    transition: .4s;
 }
 
 .slide h3:hover{
-    background-color: #f36;
+    background-color: white;
     border: solid 2px transparent;
     cursor: pointer;
+    color:black;
+    font-weight: 300;
+}
+
+
+.front:hover .buttons, .back:hover .buttons, .ai:hover .buttons{
+    animation: slideUp .8s ease-in-out;
+    animation-delay: 100ms;
+}
+@keyframes slideUp {
+    0%{
+        transform: translateY(25px);
+        opacity: .2;
+    }
+    40%,44%{
+        transform: translateY(-30px);
+        opacity: 1;
+
+    }
+    
+    90%,100%{
+        transform: translateY(0);
+    }
 }
 
 
@@ -120,6 +165,28 @@
 
 @media (max-width: 1020px){
     .courses-container{
-        width: 85%;
+        width: 90%;
+    }
+}
+@media (max-width:920px){
+    .courses-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-around;
+        padding-bottom: 3rem;
+    }
+    .courses-container .card {
+        width: 250px;
+        min-height: 25rem;
+    }
+    .card .slide{
+        min-height: 25rem;
+
+    }
+    .courses-container .card:not(.courses-container .card:nth-child(2)){
+        margin: 1rem 0;
+    }
+    #courses h1{
+        margin-bottom: 4rem;
     }
 }

@@ -13,10 +13,11 @@
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="stats.css">
     <link rel="stylesheet" href="courses.css">
+    <link rel="stylesheet" href="projects.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Web Course</title>
 </head>
-<body>
+<body class="">
     <div class="scrolltop">
         <i class="fa-solid fa-arrow-up"></i>
     </div>
@@ -30,7 +31,7 @@
              <a href="../home.html">Home</a>
              <a href="https://www.linkedin.com/in/jacer-chetoui-589814207/" target="blank">About</a>
              <a href="mailto:jacerdjo@gmail.com">Contact</a>
-             <a class="free-trial" href="#sell">Start Free Trial</a>
+             <a class="chose-course" href="#sell">Chose Course</a>
          </div>
      </header>
      <div id="home" class="">
@@ -54,12 +55,23 @@
      </div>
      
  </div>
- <div id="whatever" style="min-height: 100vh;">
-
+ <div id="whatever" style="
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 80vh;">
+    <h1>coming soon</h1>
  </div>
  <div id="courses">
+    <h1 data-aos="zoom-in-down"
+    data-aos-duration="1300"
+    data-aos-easing="ease-in-out-back"
+    >Courses</h1>
      <div class="courses-container">
-         <div class="card front">
+         <div data-aos="zoom-in-down"
+         data-aos-duration="1300"
+         data-aos-easing="ease-in-out-back"
+         data-aos-delay="200" class="card front">
              <div class="slide">
                  <div class="description">
                      <ul>
@@ -82,18 +94,17 @@
                      </ul>
                  </div>
                  <div 
-                 data-aos="fade-up"
-                 data-aos-easing="ease-in-out-back"
-                 data-aos-duration="800"
-                 data-aos-delay="50"
-                 data-aos-offset="0"
-                 class="buttons aos-animate aos-init">
+               
+                 class="buttons">
                     <h2>Start Now</h2>
                     <h3>Save for later</h3>
                  </div>
              </div>
          </div>
-         <div class="card back">
+         <div data-aos="zoom-in-down"
+         data-aos-duration="1300"
+         data-aos-easing="ease-in-out-back"
+         data-aos-delay="350" class="card back">
              <div class="slide">
                  <div class="description">
                      <ul>
@@ -115,18 +126,17 @@
                          </li>
                      </ul>
                  </div>
-                 <div data-aos="fade-up"
-                 data-aos-easing="ease-in-out-back"
-                 data-aos-duration="800"
-                 data-aos-delay="50"
-                 data-aos-offset="0"
-                 class="buttons aos-animate aos-init">
+                 <div 
+                 class="buttons">
                     <h2>Start Now</h2>
                     <h3>Save for later</h3>
                  </div>
              </div>
          </div>
-         <div class="card ai">
+         <div data-aos="zoom-in-down"
+         data-aos-duration="1300"
+         data-aos-easing="ease-in-out-back"
+         data-aos-delay="500" class="card ai">
              <div class="slide">
                  <div class="description">
                      <ul>
@@ -148,21 +158,17 @@
                          </li>
                      </ul>
                  </div>
-                 <div data-aos="fade-up"
-                 data-aos-easing="ease-in-out-back"
-                 data-aos-duration="800"
-                 data-aos-delay="50"
-                 data-aos-offset="0"
-                 class="buttons aos-animate aos-init">
+                 <div
+                 class="buttons">
                     <h2>Start Now</h2>
                     <h3>Save for later</h3>
                  </div>
              </div>
          </div>
-        
-
-         
      </div>
+ </div>
+ <div id="projects">
+     <h1>coming soon</h1>
  </div>
  <div id="stats">
      <img src="../images/split-bottom.png" class="split-top" alt="">
@@ -193,126 +199,16 @@
             <div class="name">Projects that our students have made and still increasing!</div>
         </div>
      </div>
-     <img src="../images/split-bottom.png" class="split-bottom" alt="">
 
  </div>
     
-    <div id="sell" >
-        <div class="title">
-            Subscription Plan
-        </div>
-       <div class="sellcontainer">
-        <div class="selloption">
-            <h1>Basic</h1>
-            <i class="fa-solid fa-hand-holding-dollar"></i>
-            <div class="price">
-                <h3>$<span>24</span><sub>/month</sub></h3>
-            </div>
-            <div class="features">
-                <ul>
-                    <li>
-                        <i class="fa-solid fa-circle-check"></i>
-                        Lorem ipsum dolor sit.
-                    </li>
-                    <li style="text-align: center; font-size: 1.3rem;">
-                        -
-                    </li>
-                    <li style="text-align: center; font-size: 1.3rem;">
-                        -
-                    </li>
-                    <li style="text-align: center; font-size: 1.3rem;">
-                        -
-                    </li>
-                </ul>
-            </div>
-
-        </div>    
-        <div  class="selloption">
-            <h1>Business</h1>
-            <i class="fa-solid fa-briefcase"></i>
-            <div class="price">
-                <h3>$<span>32</span><sub>/month</sub></h3>
-            </div>
-            <div class="features">
-                <ul>
-                    <li>
-                        <i class="fa-solid fa-circle-check"></i>
-                        Lorem ipsum dolor sit.
-                    </li>
-                    <li style="text-align: center; font-size: 1.3rem;">
-                        -
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-circle-check"></i>
-                        Lorem ipsum dolor sit.
-                    </li>
-                    <li style="text-align: center; font-size: 1.3rem;">
-                        -
-                    </li>
-                </ul>
-            </div>
-
-        </div>    
-        <div class="selloption">
-            <div class="popular">
-                <span>Most Popular</span>
-            </div>
-            <h1>Professional</h1>   
-            <i class="fa-solid fa-bars-progress"></i>
-            <div class="price">
-                <h3>$<span>56</span><sub>/month</sub></h3>
-            </div>
-            <div class="features">
-                <ul>
-                    <li>
-                        <i class="fa-solid fa-circle-check"></i>
-                        Lorem ipsum dolor sit.
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-circle-check"></i>
-                        Lorem ipsum dolor sit.
-                    </li>
-                    <li style="text-align: center; font-size: 1.3rem;">
-                        -
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-circle-check"></i>
-                        Lorem ipsum dolor sit.
-                    </li>
-                </ul>
-            </div>
-
-        </div>    
-        <div class="selloption">
-            <h1>Premium</h1>   
-            <i class="fa-solid fa-chart-pie"></i>
-            <div class="price">
-                <h3>$<span>86</span><sub>/month</sub></h3>
-            </div>
-            <div class="features">
-                <ul>
-                    <li>
-                        <i class="fa-solid fa-circle-check"></i>
-                        Lorem ipsum dolor sit.
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-circle-check"></i>
-                        Lorem ipsum dolor sit.
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-circle-check"></i>
-                        Lorem ipsum dolor sit.
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-circle-check"></i>
-                        Lorem ipsum dolor sit.
-                    </li>
-                </ul>
-            </div>
-
-        </div>  
-       </div>  
-    </div>
+ <div id="whatever" style="
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 80vh;">
+    <h1>coming soon</h1>
+ </div>
     <footer>
         <div class="footercontainer">
             <div class="contact">
@@ -346,15 +242,15 @@
                 data-aos-easing="ease-in-out-back"
                 data-aos-duration="1500">Helpfull links</h1>
                 <ul>
-                    <li data-aos="fade-left"
+                    <li data-aos="fade-right"
                     data-aos-easing="ease-in-out-back"
                     data-aos-delay="200"
                     data-aos-duration="1300">Udemy</li>
-                    <li data-aos="fade-left"
+                    <li data-aos="fade-right"
                     data-aos-easing="ease-in-out-back"
                     data-aos-delay="350"
                     data-aos-duration="1300">Coursera</li>
-                    <li data-aos="fade-left"
+                    <li data-aos="fade-right"
                     data-aos-easing="ease-in-out-back"
                     data-aos-delay="500"
                     data-aos-duration="1300">Elzero web School</li>
@@ -370,7 +266,6 @@
         </div>
     </footer>
     <script src="app.js"></script>
-    <script src="app-courses.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
