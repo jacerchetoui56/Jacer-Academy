@@ -89,6 +89,10 @@
     padding:.4rem 1.7rem;
     transition: .3s;
 }
+.card:not(.card:first-child) .slide h2{
+    padding-left: 2.3rem ;
+    padding-right: 2.3rem ;
+}
 .slide h2:hover {
     background-color: transparent;
     border: solid 2px white;
@@ -189,4 +193,22 @@
     #courses h1{
         margin-bottom: 4rem;
     }
+}
+@media (max-width : 550px){
+   .courses-container .card {
+       width: 85%;
+       min-height: 30rem;
+   }
+   .card .slide{
+       min-height: 30rem !important;
+   }
+   .slide .description li{
+       font-size: 1.4rem;
+   }
+   .slide h2 {
+       font-size: 1.6rem;
+   }
+   .slide h3{
+       font-size: 1.4rem;
+   }
 }

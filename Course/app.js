@@ -7,13 +7,19 @@ const home = document.querySelector("#home")
 const burger = document.querySelector(".burger")
 const links = document.querySelector("header .links")
 
-burger.addEventListener('click',()=>{
-    links.classList.toggle("slide-burger")
-    burger.classList.toggle("slide-burger")
-    body.classList.toggle("blur")
-})
-
-console.log(scrolltotop)
+document.addEventListener("click", function(event) {
+	if (event.target.closest(".links")) return;
+    else if(event.target.closest(".burger")){
+        links.classList.toggle("slide-burger")
+        burger.classList.toggle("slide-burger")
+        body.classList.toggle("blur")
+    }
+	else {
+        links.classList.remove("slide-burger")
+        body.classList.remove("blur")
+        burger.classList.remove("slide-burger")
+    }
+});
 
 
 
