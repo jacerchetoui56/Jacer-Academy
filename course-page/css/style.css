@@ -134,6 +134,7 @@ header .links a:hover {
   gap: 2rem;
 }
 .plan a {
+  position: relative;
   color: black;
 }
 
@@ -145,6 +146,20 @@ header .links a:hover {
   max-height: 13rem;
   position: sticky;
   top: 0;
+}
+.page-index a.selected::before {
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: -0.7rem;
+  width: 4px;
+  background-color: purple;
+  height: 140%;
+  border-radius: 0 2px 2px 0;
+}
+.page-index a.selected {
+  color: purple;
+  font-weight: 600;
 }
 .sum {
   flex: 3;
