@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: sans-serif;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+li {
+  list-style: none;
+}
+
+header {
+  min-height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-image: linear-gradient(
+    to right bottom,
+    #1f193d,
+    #544161,
+    #6c6171,
+    #6a5359
+  );
+}
+header .logo img {
+  height: 70%;
+  width: 70%;
+}
+header .links {
+  flex-basis: 40%;
+}
+header .links ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+header .links a {
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+header .links a:hover {
+  color: #f36;
+}
+
+/* !------ Summary ----------- */
+
+.summary {
+  background-color: #c1c1c15e;
+  padding: 3rem 0;
+}
+.summary-container {
+  width: 80%;
+  margin: 0 auto;
+}
+.summary .title {
+  display: flex;
+}
+.summary .image img {
+  height: 90%;
+  width: 80%;
+}
+.summary .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.summary .text h1 {
+  font-size: 2.5rem;
+  font-family: "Libre Franklin", sans-serif;
+}
+.summary .link {
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid rgb(199, 199, 199);
+}
+.summary .link i {
+  color: #200048;
+}
+.summary .link span,
+.link a {
+  font-family: "Quicksand", sans-serif;
+  color: #767676e3;
+  font-size: 1.2rem;
+  padding: 0 1rem 0.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+  transition: 0.3s;
+}
+.summary .link span:first-child {
+  color: #200048 !important;
+}
+.summary .link span:first-child:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  height: 4px;
+  border-radius: 2px 2px 0 0;
+  width: 90%;
+  background-color: #544161;
+}
+.summary .link span:hover,
+.link a:hover {
+  cursor: pointer;
+  color: #200048;
+}
+.summary .link span:nth-child(2) i {
+  color: #767676e3;
+  transition: 0.3s;
+}
+.summary .link span:nth-child(2):hover i {
+  color: #200048;
+}
+
+.summary .introduction {
+  padding: 1.5rem 0;
+  line-height: 1.7;
+  letter-spacing: 1px;
+  color: #0000009e;
+  font-size: 1rem;
+}

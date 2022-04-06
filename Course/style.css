@@ -10,7 +10,15 @@ html {
 }
 body{
     /* background-color: #e4e0e0ad; */
-    
+    animation: entry .7s;
+}
+@keyframes entry {
+    from{
+        opacity: .7;
+    }
+    to{
+        opacity: 1;
+    }
 }
 body, #sell{
     transition: 0.4s ease;
@@ -147,7 +155,9 @@ li {
 .scrolltop.show{
     right: 1rem;
 }
-
+.scrolltop:hover{
+    cursor: pointer;
+}
 
 
 
@@ -332,44 +342,7 @@ header .links a:hover {
     .homecontainer p span{
         font-size: 2.3rem;
     }
-    #sell .title{
-        font-size: 2rem;
-        margin-bottom: 3rem;
-        text-shadow: 0 5px 10px rgb(51, 51, 51);
-    }
     
-    #sell .selloption h1{
-        font-size: 2rem;
-    }
-    .selloption i:not(.fa-circle-check){   
-        font-size: 2.2rem; 
-    }
-    .price{
-        width: 80%;
-    }
-    .price span{
-        font-size: 2.9rem;
-    }
-    #sell .selloption .features li{
-        text-align: center;
-        font-size: 1.2rem;
-    }
-    #sell .selloption .features li i {
-        margin-left: 0;
-    }
-
-    .darkmodetoggle .cercle{
-        padding: 10px;
-    }
-    .darkmodetoggle i{
-        font-size: 1.5rem;
-    }
-    .darkmodetoggle.dark .cercle{
-        padding: 10px;
-    }
-    .darkmodetoggle.dark i{
-        font-size: 1.5rem;
-    }
 
 }
 

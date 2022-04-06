@@ -174,4 +174,7 @@ a{
     .welcome h1{
         margin: 1rem 0;
     }
+    .enroll i{
+        animation: slides ease-in-out infinite  1s;
+    }
 }
