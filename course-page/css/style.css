@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -20,31 +21,25 @@ li {
 }
 
 header {
-  min-height: 15vh;
+  min-height: 13vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-image: linear-gradient(
-    to right bottom,
-    #1f193d,
-    #544161,
-    #6c6171,
-    #6a5359
-  );
+  background-image: linear-gradient(to right bottom, #221b3f, #483859, #64576c);
 }
 header .logo img {
   height: 70%;
   width: 70%;
 }
 header .links {
-  flex-basis: 40%;
+  flex-basis: 25%;
 }
 header .links ul {
   display: flex;
   justify-content: space-evenly;
 }
 header .links a {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   transition: 0.3s;
 }
 header .links a:hover {
@@ -54,8 +49,8 @@ header .links a:hover {
 /* !------ Summary ----------- */
 
 .summary {
-  background-color: #c1c1c15e;
-  padding: 3rem 0;
+  background-color: #c1c1c159;
+  padding: 3.2rem 0;
 }
 .summary-container {
   width: 80%;
@@ -76,9 +71,10 @@ header .links a:hover {
 .summary .text h1 {
   font-size: 2.5rem;
   font-family: "Libre Franklin", sans-serif;
+  transform: translateY(-25%);
 }
 .summary .link {
-  padding-bottom: 0.2rem;
+  padding-bottom: 0.8rem;
   border-bottom: 1px solid rgb(199, 199, 199);
 }
 .summary .link i {
@@ -101,7 +97,7 @@ header .links a:hover {
 .summary .link span:first-child:after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -0.6rem;
   left: 5%;
   height: 4px;
   border-radius: 2px 2px 0 0;
@@ -127,4 +123,86 @@ header .links a:hover {
   letter-spacing: 1px;
   color: #0000009e;
   font-size: 1rem;
+}
+
+/* !------------- Plan ----------- */
+
+.plan-container {
+  width: 80%;
+  margin: -2rem auto;
+  display: flex;
+  gap: 2rem;
+}
+.plan a {
+  color: black;
+}
+
+.page-index {
+  flex: 1;
+  border: solid 1px #a7a7a785;
+  border-radius: 6px;
+  background-color: white;
+  max-height: 13rem;
+  position: sticky;
+  top: 0;
+}
+.sum {
+  flex: 3;
+}
+#html,
+#css,
+#js {
+  border: solid 1px #a7a7a785;
+  border-radius: 6px;
+  background-color: white;
+  margin-bottom: 2rem;
+}
+.page-index h1,
+#html h1,
+#css h1,
+#js h1 {
+  border-bottom: solid 1px #a7a7a785;
+  padding: 0.8rem;
+  font-size: 1.5rem;
+  color: #281734b5;
+}
+.page-index a {
+  width: 100%;
+}
+.page-index li:hover {
+  background-color: #c1c1c1ad;
+}
+#html ul,
+#css ul,
+#js ul {
+  padding: 1rem 1rem 1rem 1.5rem;
+}
+.plan li {
+  padding: 0.7rem;
+  font-size: 1.1rem;
+  font-family: "Hind Siliguri", sans-serif;
+}
+.plan li:hover span {
+  color: #200048;
+  text-shadow: 0 0 1px #1d0056ab;
+  cursor: pointer;
+}
+.plan i {
+  margin-right: 1rem;
+  font-size: 1.3rem;
+  color: #aaa;
+  transform: translateY(15%);
+  background-color: white;
+}
+.sum li {
+  position: relative;
+}
+.sum li:not(.sum li:last-child):after {
+  content: "";
+  position: absolute;
+  bottom: -1.25rem;
+  left: 1.25rem;
+  background-color: #aaaaaa;
+  width: 2px;
+  height: 70%;
 }

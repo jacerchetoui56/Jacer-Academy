@@ -1,214 +1,231 @@
-#courses{
-    min-height: 80vh;
-    background-image: linear-gradient(to right bottom, #1F193D,#544161,#6C6171,#6A5359);
-    color: white;
+a {
+  color: white;
+}
+#courses {
+  min-height: 80vh;
+  background-image: linear-gradient(
+    to right bottom,
+    #1f193d,
+    #544161,
+    #6c6171,
+    #6a5359
+  );
+  color: white;
 }
 
-#courses h1{
-    text-align: center;
-    padding: 4rem 0 2rem;
-    margin-bottom: 2rem;
-    font-family: sans-serif;
-    /* font-size: 2rem; */
-    color: white;
-    position: relative;
+#courses h1 {
+  text-align: center;
+  padding: 4rem 0 2rem;
+  margin-bottom: 2rem;
+  font-family: sans-serif;
+  /* font-size: 2rem; */
+  color: white;
+  position: relative;
 }
-#courses h1::before{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    height: 3px;
-    background-color: #f36;
-    width: 5rem;
-    transform: translate(-50%,-.5rem);
-    background-image: linear-gradient(to right, #f36 48%,#52445B 48%,#52445B 52%,#48BADA 40%);
+#courses h1::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 3px;
+  background-color: #f36;
+  width: 5rem;
+  transform: translate(-50%, -0.5rem);
+  background-image: linear-gradient(
+    to right,
+    #f36 48%,
+    #52445b 48%,
+    #52445b 52%,
+    #48bada 40%
+  );
 }
-.courses-container{
-    width: 950px;
-    min-height: 80vh;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 4rem;
+.courses-container {
+  width: 950px;
+  min-height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 4rem;
 }
 
 .front {
-    background-image: url(../images/front.png);
-    background-size: 100% 100%;
+  background-image: url(../images/front.png);
+  background-size: 100% 100%;
 }
 .back {
-    background-image: url(../images/back.png);
-    background-size: 100% 100%;
+  background-image: url(../images/back.png);
+  background-size: 100% 100%;
 }
 .ai {
-    background-image: url(../images/ai.jpeg);
-    background-size: 100% 100%;
+  background-image: url(../images/ai.jpeg);
+  background-size: 100% 100%;
 }
 
-.front , .back , .ai{
-    flex:1;
-    min-height: 23rem;
-    overflow: hidden;
+.front,
+.back,
+.ai {
+  flex: 1;
+  min-height: 23rem;
+  overflow: hidden;
 }
-.front:hover , .back:hover , .ai:hover{
-    cursor: pointer;
-}
-
-.slide{
-    position: relative;
-    min-height: 23rem;
-    z-index: 3;
-    background-color: rgba(28,185,218,.85);
-    transform: translateX(-102%);
-    opacity: .5;
-    transition: .45s;
+.front:hover,
+.back:hover,
+.ai:hover {
+  cursor: pointer;
 }
 
-.front:hover .slide, .back:hover .slide, .ai:hover .slide{
-    transform: translateX(0);
-    opacity: 1;
+.slide {
+  position: relative;
+  min-height: 23rem;
+  z-index: 3;
+  background-color: rgba(28, 185, 218, 0.85);
+  transform: translateX(-102%);
+  opacity: 0.5;
+  transition: 0.45s;
 }
 
-
-.slide .buttons{
-    position: absolute;
-    bottom: 1.5rem;
-    left: 1rem;
+.front:hover .slide,
+.back:hover .slide,
+.ai:hover .slide {
+  transform: translateX(0);
+  opacity: 1;
 }
 
-.slide h2{
-    width: fit-content;
-    border-radius: 20px;
-    font-weight: 400;
-    font-family: sans-serif;
-    font-size: 1.1rem;
-    background-color: #f36;
-    border: solid 2px transparent;
-    padding:.4rem 1.7rem;
-    transition: .3s;
+.slide .buttons {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1rem;
 }
-.card:not(.card:first-child) .slide h2{
-    padding-left: 2.3rem ;
-    padding-right: 2.3rem ;
+
+.slide h2 {
+  width: fit-content;
+  border-radius: 20px;
+  font-weight: 400;
+  font-family: sans-serif;
+  font-size: 1.1rem;
+  background-color: #f36;
+  border: solid 2px transparent;
+  padding: 0.4rem 1.7rem;
+  transition: 0.3s;
+}
+.card:not(.card:first-child) .slide h2 {
+  padding-left: 2.3rem;
+  padding-right: 2.3rem;
 }
 .slide h2:hover {
-    background-color: transparent;
-    border: solid 2px white;
-    cursor: pointer;
+  background-color: transparent;
+  border: solid 2px white;
+  cursor: pointer;
 }
 
-.slide h3{
-    width: fit-content;
-    padding:0.5rem 1.1rem;
-    margin-top: .7rem;
-    font-weight: 400;
-    font-family: sans-serif;
-    font-size: 1rem;
-    border: solid 2px white;
-    border-radius: 20px;
-    transition: .4s;
+.slide h3 {
+  width: fit-content;
+  padding: 0.5rem 1.1rem;
+  margin-top: 0.7rem;
+  font-weight: 400;
+  font-family: sans-serif;
+  font-size: 1rem;
+  border: solid 2px white;
+  border-radius: 20px;
+  transition: 0.4s;
 }
 
-.slide h3:hover{
-    background-color: white;
-    border: solid 2px transparent;
-    cursor: pointer;
-    color:black;
-    font-weight: 300;
+.slide h3:hover {
+  background-color: white;
+  border: solid 2px transparent;
+  cursor: pointer;
+  color: black;
+  font-weight: 300;
 }
 
-
-.front:hover .buttons, .back:hover .buttons, .ai:hover .buttons{
-    animation: slideUp .8s ease-in-out;
-    animation-delay: 100ms;
+.front:hover .buttons,
+.back:hover .buttons,
+.ai:hover .buttons {
+  animation: slideUp 0.8s ease-in-out;
+  animation-delay: 100ms;
 }
 @keyframes slideUp {
-    0%{
-        transform: translateY(25px);
-        opacity: .2;
-    }
-    40%,44%{
-        transform: translateY(-30px);
-        opacity: 1;
+  0% {
+    transform: translateY(25px);
+    opacity: 0.2;
+  }
+  40%,
+  44% {
+    transform: translateY(-30px);
+    opacity: 1;
+  }
 
-    }
-    
-    90%,100%{
-        transform: translateY(0);
-    }
+  90%,
+  100% {
+    transform: translateY(0);
+  }
 }
 
-
-.slide .description{
-    position: absolute;
-    top: 5rem;
-    left:1rem;
+.slide .description {
+  position: absolute;
+  top: 5rem;
+  left: 1rem;
 }
-.slide .description li{
-    margin-bottom: .5rem;
-    font-family: sans-serif;
-    font-size: 1.05rem;
+.slide .description li {
+  margin-bottom: 0.5rem;
+  font-family: sans-serif;
+  font-size: 1.05rem;
 }
-.slide .description li span{
-    margin-left: .5rem;
-}
-
-.slide .description li .fa-laptop-code{
-    font-size: 15px;
-}
-.slide .description li:nth-child(4) i{
-    margin-right: .5rem;
+.slide .description li span {
+  margin-left: 0.5rem;
 }
 
-
-
+.slide .description li .fa-laptop-code {
+  font-size: 15px;
+}
+.slide .description li:nth-child(4) i {
+  margin-right: 0.5rem;
+}
 
 /* !---------- media querry ----------------- */
 
-@media (max-width: 1020px){
-    .courses-container{
-        width: 90%;
-    }
+@media (max-width: 1020px) {
+  .courses-container {
+    width: 90%;
+  }
 }
-@media (max-width:920px){
-    .courses-container{
-        flex-direction: column;
-        justify-content: center;
-        align-items: space-around;
-        padding-bottom: 3rem;
-    }
-    .courses-container .card {
-        width: 250px;
-        min-height: 25rem;
-    }
-    .card .slide{
-        min-height: 25rem;
-
-    }
-    .courses-container .card:not(.courses-container .card:nth-child(2)){
-        margin: 1rem 0;
-    }
-    #courses h1{
-        margin-bottom: 4rem;
-    }
+@media (max-width: 920px) {
+  .courses-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-around;
+    padding-bottom: 3rem;
+  }
+  .courses-container .card {
+    width: 250px;
+    min-height: 25rem;
+  }
+  .card .slide {
+    min-height: 25rem;
+  }
+  .courses-container .card:not(.courses-container .card:nth-child(2)) {
+    margin: 1rem 0;
+  }
+  #courses h1 {
+    margin-bottom: 4rem;
+  }
 }
-@media (max-width : 550px){
-   .courses-container .card {
-       width: 85%;
-       min-height: 30rem;
-   }
-   .card .slide{
-       min-height: 30rem !important;
-   }
-   .slide .description li{
-       font-size: 1.4rem;
-   }
-   .slide h2 {
-       font-size: 1.6rem;
-   }
-   .slide h3{
-       font-size: 1.4rem;
-   }
+@media (max-width: 550px) {
+  .courses-container .card {
+    width: 85%;
+    min-height: 30rem;
+  }
+  .card .slide {
+    min-height: 30rem !important;
+  }
+  .slide .description li {
+    font-size: 1.4rem;
+  }
+  .slide h2 {
+    font-size: 1.6rem;
+  }
+  .slide h3 {
+    font-size: 1.4rem;
+  }
 }
