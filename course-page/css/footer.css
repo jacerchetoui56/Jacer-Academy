@@ -1,0 +1,102 @@
+footer{
+    min-height: 50vh;
+    background-image: linear-gradient(to right,#0c0e14 0%,#3d3b5e 100%);
+}
+
+.footercontainer{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3rem 0;
+    color: #b5b4c3;
+    font-family: sans-serif;
+}
+
+footer .contact-text{
+    margin-bottom: 2rem;
+}
+footer .contact-text p{
+    padding: .4rem;
+}
+footer .contact-text p span{
+    margin-left: .5rem;
+}
+footer .contact-text i{
+    color: #f36;
+}
+footer .contact-text h1{
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+footer .contact-text a{
+    color: #b5b4c3;
+}
+footer .contact-text a:hover{
+    text-decoration: underline;
+}
+
+footer .contact .socials i{
+    padding: .6rem .65rem;
+    margin-right: .25rem;
+    color: white;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,.1);
+    transition: .4s;
+}
+footer .contact .socials i:hover{
+    cursor: pointer;
+    background-color: #f36;
+}
+
+footer .related-links{
+    margin-top: -1rem;
+}
+footer .related-links h1{
+    color: white;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+footer .related-links li{
+    list-style: square;
+    margin-left: 1rem;
+    padding:0.1rem 0;
+}
+
+footer .made{
+    color: #b5b4c3;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2rem;
+    font-family: sans-serif;
+}
+footer .made i{
+    color: #f36;
+}
+
+
+@media screen and (max-width: 550px)
+{
+    .footercontainer{
+        flex-direction: column;
+        align-items: stretch;
+    }
+    footer .contact{
+        order: 3;
+    }
+    footer .contact-text{
+        margin-bottom: 3rem;
+    }
+    footer .related-links{
+        margin-bottom: 3rem;
+    }
+    footer .made {
+        text-align: start;
+        padding-left: 3rem;
+    }
+}

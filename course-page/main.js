@@ -1,6 +1,8 @@
 const indexes = document.querySelectorAll(".page-index a")
-
+const scrolltotop = document.querySelector(".scrolltop")
 window.onscroll = () =>{
+    if(window.scrollY >= 1500) scrolltotop.classList.add("show")
+    else scrolltotop.classList.remove("show")
     if(window.scrollY>=0 && window.scrollY<590){
         indexes[0].classList.add("selected")
         indexes[1].classList.remove("selected")
@@ -17,3 +19,8 @@ window.onscroll = () =>{
         indexes[2].classList.add("selected")
     }
 }
+
+
+scrolltotop.addEventListener('click',()=>{
+    window.scrollTo({top:0 , behavior : "smooth"})
+})

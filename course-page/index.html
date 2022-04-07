@@ -7,10 +7,16 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/fontawesome.min.css">
     <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="icon" href="../images/title_logo.png" type="image/icon" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>Front-End Course</title>
   </head>
   <body>
+    <div class="scrolltop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
     <header>
       <div class="logo">
         <a href="../home.html">
@@ -39,7 +45,7 @@
                    Summary
                 </span>
               <span>
-                  <a target="blank" href="https://codepen.io/">
+                  <a target="blank" href="https://codepen.io/jacerchetoui56/pen/OJzvpdK">
                       <i class="fa-solid fa-code"></i>
                       Online Compiler
                     </a>
@@ -217,6 +223,66 @@
             </div>
         </div>
     </div>
+    <footer id="footer">
+        <div class="footercontainer">
+            <div class="contact">
+                <div class="contact-text">
+                    <h1 data-aos="zoom-in-down"
+                    data-aos-easing="ease-in-out-back"
+                    data-aos-duration="1500">Contact Us</h1>
+                    <p data-aos="fade-up"
+                    data-aos-easing="ease-in-out-back"
+                    data-aos-delay="300"
+                    data-aos-duration="1300"><i class="fa-solid fa-phone"> </i><span>(+216) 25867129</span></p>
+                    <p data-aos="fade-up"
+                    data-aos-easing="ease-in-out-back"
+                    data-aos-delay="600"
+                    data-aos-duration="1300"><i class="fa-solid fa-envelope"> </i><span>jacerdjo@gmail.com</span></p>
+                    <p data-aos="fade-up"
+                    data-aos-easing="ease-in-out-back"
+                    data-aos-delay="800"
+                    data-aos-duration="1300"><i class="fa-solid fa-globe"></i><span><a target="blank" href="https://github.com/jacerchetoui56/">www.github.com/jacerchetoui56</a></span></p>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1300" data-aos-easing="ease-in-out-back" data-aos-offset="0" class="socials">
+                    <a href="https://www.facebook.com/jacer.chetoui.56/"><i  class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/chetoui_jacer"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/jacer_chetoui/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/jacerchetoui56/"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/jacer-chetoui-589814207/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="related-links">
+                <h1 data-aos="zoom-in-down"
+                data-aos-easing="ease-in-out-back"
+                data-aos-duration="1500">Helpfull Links</h1>
+                <ul>
+                    <li data-aos="fade-right"
+                    data-aos-easing="ease-in-out-back"
+                    data-aos-delay="200"
+                    data-aos-duration="1300">Udemy</li>
+                    <li data-aos="fade-right"
+                    data-aos-easing="ease-in-out-back"
+                    data-aos-delay="350"
+                    data-aos-duration="1300">Coursera</li>
+                    <li data-aos="fade-right"
+                    data-aos-easing="ease-in-out-back"
+                    data-aos-delay="500"
+                    data-aos-duration="1300">Elzero web School</li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="made">
+            Made With <i class="fa-solid fa-heart"></i> By Jacer
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once:true,
+            duration:800
+        });
+      </script>
     <script src="./main.js"></script>
   </body>
 </html>

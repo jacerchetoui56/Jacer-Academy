@@ -1,7 +1,4 @@
 const body = document.querySelector("body")
-const sell = document.querySelector("#sell")
-const toplogolight = document.querySelector(".lightlogo")
-const toplogodark = document.querySelector(".darklogo")
 const scrolltotop = document.querySelector(".scrolltop")
 const home = document.querySelector("#home")
 const burger = document.querySelector(".burger")
