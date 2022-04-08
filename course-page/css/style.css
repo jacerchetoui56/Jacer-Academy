@@ -97,7 +97,7 @@ header .links a:hover {
 .summary .link span:first-child {
   color: #200048 !important;
 }
-.summary .link span:first-child:after {
+.summary .link span:first-child::after {
   content: "";
   position: absolute;
   bottom: -0.6rem;
@@ -148,7 +148,7 @@ header .links a:hover {
   background-color: white;
   max-height: 13rem;
   position: sticky;
-  top: 0;
+  top: 1rem;
   margin-bottom: 2rem;
 }
 .page-index a.selected::before {
@@ -209,7 +209,7 @@ header .links a:hover {
 .plan i {
   margin-right: 1rem;
   font-size: 1.3rem;
-  color: #aaa;
+  color: #aaaaaaa6;
   transform: translateY(15%);
   background-color: white;
 }
@@ -221,7 +221,7 @@ header .links a:hover {
   position: absolute;
   bottom: -1.25rem;
   left: 1.25rem;
-  background-color: #aaaaaa;
+  background-color: #aaaaaaa6;
   width: 2px;
   height: 70%;
 }

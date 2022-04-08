@@ -107,3 +107,33 @@
   flex-direction: column;
   justify-content: space-evenly;
 }
+
+.follower li {
+  font-size: 1.1rem;
+  font-family: "Hind Siliguri", sans-serif;
+  position: relative;
+}
+.follower li i {
+  /* margin-right: 1rem; */
+  font-size: 1.3rem;
+  color: #aaaaaaa6;
+  transform: translateY(15%);
+  background-color: white;
+}
+
+.follower li:not(.follower li:last-child):after {
+  content: "";
+  position: absolute;
+  bottom: -0.7rem;
+  left: 0.6rem;
+  background-color: #aaaaaaa6;
+  width: 2px;
+  height: 55%;
+}
+
+.follower h1 {
+  /* border-bottom: solid 1px #a7a7a785; */
+  padding: 0;
+  font-size: 1.5rem;
+  color: #000000b5;
+}
