@@ -1,0 +1,64 @@
+#html-code {
+  position: relative;
+  background-color: #bb7dff4f;
+  padding: 1.2rem 1rem;
+  border-radius: 5px;
+  font-family: "Courier New", Courier, monospace;
+  overflow: hidden;
+}
+#html-code::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background-color: #a100a1;
+}
+#html-code > span {
+  line-height: 1.5;
+}
+#html-code .attr {
+  color: red;
+}
+#html-code .attr-value {
+  color: blue;
+}
+
+/* o-tag is for the opening tag like "<title>" */
+/* c-tag is for the opening tag like "</title>" */
+.o-tag,
+.c-tag {
+  color: purple;
+}
+.o-tag::before {
+  content: "<";
+  color: purple;
+}
+.c-tag::before {
+  content: "</";
+  color: purple;
+}
+.o-tag::after,
+.c-tag::after {
+  content: ">";
+  color: purple;
+}
+
+#html-code a {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  color: white;
+  background-color: #7500dfba;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: 0.4s;
+}
+#html-code a:hover {
+  background-color: #7300dfe1;
+}
+#html-code .comment {
+  color: #0043ffc7;
+}
