@@ -114,8 +114,7 @@
   padding-right: 2.3rem;
 }
 .slide h2:hover {
-  background-color: transparent;
-  border: solid 2px white;
+  background-color: #ff0040;
   cursor: pointer;
 }
 

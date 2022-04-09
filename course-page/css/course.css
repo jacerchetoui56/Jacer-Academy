@@ -11,6 +11,7 @@
   padding: 1rem 0;
   border-top: solid 1px #a7a7a785;
   flex: 3;
+  width: 900px;
 }
 .course h1 {
   transform: translateX(-1.5rem);
@@ -171,4 +172,24 @@
 /* !------------ JS ------------ */
 #js-course {
   min-height: 150vh;
+}
+
+/* !------------ Media querries -------- */
+@media (max-width: 920px) {
+  #course .follower {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  #course {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .course h1 {
+    transform: translateX(0);
+  }
+  .course img {
+    height: 100%;
+    width: 100%;
+  }
 }
