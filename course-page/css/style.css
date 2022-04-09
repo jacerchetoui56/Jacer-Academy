@@ -29,6 +29,10 @@ header {
   align-items: center;
   justify-content: space-around;
   background-image: linear-gradient(to right bottom, #221b3f, #483859, #64576c);
+  position: relative;
+}
+header .logo {
+  margin: 3vh 2vh;
 }
 header .logo img {
   height: 70%;
@@ -40,6 +44,14 @@ header .links {
 header .links ul {
   display: flex;
   justify-content: space-evenly;
+  transition: 0.3s;
+  overflow: hidden;
+}
+header .links ul.show {
+  max-height: 50vh;
+}
+header ul li {
+  text-align: center;
 }
 header .links a {
   font-size: 1.1rem;
@@ -47,6 +59,16 @@ header .links a {
 }
 header .links a:hover {
   color: #f36;
+}
+header i {
+  position: absolute;
+  top: 4vh;
+  right: 2rem;
+  color: transparent;
+  font-size: 1.5rem;
+}
+header i:hover {
+  cursor: pointer;
 }
 
 /* !------ Summary ----------- */
@@ -64,7 +86,7 @@ header .links a:hover {
 }
 .summary .image img {
   height: 90%;
-  width: 80%;
+  width: 90%;
 }
 .summary .text {
   display: flex;
@@ -75,6 +97,7 @@ header .links a:hover {
   font-size: 2.5rem;
   font-family: "Libre Franklin", sans-serif;
   transform: translateY(-25%);
+  transition: 0.3s;
 }
 .summary .link {
   padding-bottom: 0.8rem;
@@ -118,6 +141,17 @@ header .links a:hover {
 }
 .summary .link span:nth-child(2):hover i {
   color: #200048;
+}
+.summary .link2 {
+  display: none;
+  width: 100%;
+  padding-bottom: 0.6rem;
+  margin-bottom: 1rem;
+}
+.summary .link2 span,
+.summary .link2 a {
+  font-size: 1rem;
+  padding: 0;
 }
 
 .summary .introduction {
@@ -197,7 +231,7 @@ header .links a:hover {
   padding: 1rem 1rem 1rem 1.5rem;
 }
 .plan li {
-  padding: 0.7rem;
+  padding: 0.4rem 0.7rem;
   font-size: 1.1rem;
   font-family: "Hind Siliguri", sans-serif;
 }
@@ -252,6 +286,43 @@ header .links a:hover {
   .plan .page-index {
     display: none;
   }
+  .summary .text h1 {
+    font-size: 2rem;
+    transform: translateY(-0.5rem);
+  }
+}
+@media (max-width: 785px) {
+  .summary .link {
+    display: none;
+  }
+  .summary .link2 {
+    display: flex !important;
+    justify-content: space-around;
+  }
+  header i {
+    color: white;
+  }
+  header {
+    flex-direction: column;
+  }
+  header .logo {
+    align-self: flex-start;
+  }
+  header ul {
+    flex-direction: column;
+    max-height: 0;
+  }
+
+  header ul li {
+    padding: 1rem 0;
+  }
+  .summary-container {
+    width: 90%;
+  }
+  header .logo img {
+    height: 60%;
+    width: 60%;
+  }
 }
 @media (max-width: 600px) {
   .plan li {
@@ -259,5 +330,24 @@ header .links a:hover {
   }
   .sum li:not(.sum li:last-child):after {
     left: 1rem;
+  }
+  .plan-container {
+    width: 90%;
+    margin: -2rem auto 2rem;
+  }
+  #html-code {
+    font-size: 85%;
+  }
+  .summary .link2 {
+    padding-bottom: 0.5rem;
+  }
+  .summary .link2 span,
+  .summary .link2 a {
+    font-size: 0.8rem;
+  }
+  .summary .text h1 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    transform: translateY(-0.5rem);
   }
 }

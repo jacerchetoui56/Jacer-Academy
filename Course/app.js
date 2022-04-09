@@ -3,8 +3,10 @@ const scrolltotop = document.querySelector(".scrolltop")
 const home = document.querySelector("#home")
 const burger = document.querySelector(".burger")
 const links = document.querySelector("header .links")
+const contactRef = document.querySelector("header .links .contact-ref")
 
 document.addEventListener("click", function(event) {
+    event.stopImmediatePropagation()
 	if (event.target.closest(".links")) return;
     else if(event.target.closest(".burger")){
         links.classList.toggle("slide-burger")
@@ -17,6 +19,9 @@ document.addEventListener("click", function(event) {
         burger.classList.remove("slide-burger")
     }
 });
+
+
+
 
 
 
@@ -38,6 +43,10 @@ window.onscroll = ()=>{
     }
     if(window.scrollY > 1700){
         scrolltotop.classList.add("show")
+        links.classList.remove("slide-burger")
+        body.classList.remove("blur")
+        burger.classList.remove("slide-burger")
+
     }
     else scrolltotop.classList.remove("show")
     
