@@ -6,7 +6,6 @@ const follower = document.querySelectorAll(".follower > div")
 const course = document.querySelectorAll(".course > div")
 
 window.onscroll = () =>{
-    console.log(window.scrollY)
     if(window.scrollY >= 1500) scrolltotop.classList.add("show")
     else scrolltotop.classList.remove("show")
     if(window.scrollY>=0 && window.scrollY<900){
