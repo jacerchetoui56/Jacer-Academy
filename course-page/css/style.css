@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -24,7 +25,7 @@ li {
 }
 
 header {
-  min-height: 13vh;
+  min-height: 11vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -49,6 +50,7 @@ header .links ul {
 }
 header .links ul.show {
   max-height: 50vh;
+  opacity: 1;
 }
 header ul li {
   text-align: center;
@@ -311,6 +313,7 @@ header i:hover {
   header ul {
     flex-direction: column;
     max-height: 0;
+    opacity: 0;
   }
 
   header ul li {
