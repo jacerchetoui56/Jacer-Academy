@@ -165,13 +165,23 @@
   background-color: purple;
 }
 /* !-------------- CSS ------- */
-#css-course {
-  min-height: 150vh;
+#css-course,
+#js-course {
+  min-height: 100vh;
+  position: relative;
+}
+#css-course span,
+#js-course span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateZ(-45deg);
+  font-size: 3.5rem;
+  color: #aaa;
 }
 
 /* !------------ JS ------------ */
 #js-course {
-  min-height: 150vh;
 }
 
 /* !------------ Media querries -------- */
