@@ -5,6 +5,7 @@
   border-radius: 5px;
   font-family: "Courier New", Courier, monospace;
   overflow: hidden;
+  font-size: 0.95rem;
 }
 #html-code::before {
   content: "";

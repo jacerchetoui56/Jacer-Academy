@@ -134,6 +134,10 @@
               </li>
               <li>
                 <i class="fa-regular fa-circle-check"></i>
+                <span><a href="#html-styles">HTML Styles</a></span>
+              </li>
+              <li>
+                <i class="fa-regular fa-circle-check"></i>
                 <span><a href="#html-classes-id">HTML Classes & ID</a></span>
               </li>
             </ul>
@@ -287,6 +291,10 @@
                   <li>
                     <i class="fa-regular fa-circle-check"></i>
                     <span><a href="#html-attributes">HTML Attributes</a></span>
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-circle-check"></i>
+                    <span><a href="#html-styles">HTML Styles</a></span>
                   </li>
                   <li>
                     <i class="fa-regular fa-circle-check"></i>
@@ -526,6 +534,37 @@
                     <div id="note">
                         <b>Note : </b> The link's destination is specified in the <b>href</b> attribute. We will learn more about attributes later
                     </div>
+                    <h3>HTML Lists : </h3>
+                    <p>HTML lists allow web developers to group a set of related items in lists.</p>
+                    <p>There is two types of HTML links :</p>
+                    <ul>
+                      <li>
+                         An <b>unordered</b> list starts with the <span class="code">&lt;ul&gt;</span> tag. Each list item starts with the <span class="code">&lt;li&gt;</span> tag.
+                         <br>(The list items will be marked with bullets (small black circles) by default)
+                      </li>
+                      <li>
+                         An <b>ordered</b> list starts with the <span class="code">&lt;ol&gt;</span> tag. Each list item starts with the <span class="code">&lt;li&gt;</span> tag.
+                         <br>(The list items will be marked with numbers by default)
+                      </li>
+                    </ul>
+                    <h4>Example : </h4>
+                    <div id="html-code">
+                      <a target="blank" href="https://codepen.io/jacerchetoui56/pen/WNdyowN" class="tryit">Try It</a>
+                      <span class="o-tag">h1</span>In this course we will learn :<span class="c-tag">h1</span>
+                      <br><span class="comment">&lt;!-- unordered list --&gt;</span>
+                      <br><span class="o-tag">ul</span>
+                      <br>&nbsp;&nbsp; <span class="o-tag">li</span>HTML<span class="c-tag">li</span>
+                      <br>&nbsp;&nbsp; <span class="o-tag">li</span>CSS<span class="c-tag">li</span>
+                      <br>&nbsp;&nbsp; <span class="o-tag">li</span>JavaScript<span class="c-tag">li</span>
+                      <br><span class="c-tag">ul</span>
+                      <br><span class="comment">&lt;!-- ordered list --&gt;</span>
+                      <br><span class="o-tag">ol</span>
+                      <br>&nbsp;&nbsp; <span class="o-tag">li</span>HTML<span class="c-tag">li</span>
+                      <br>&nbsp;&nbsp; <span class="o-tag">li</span>CSS<span class="c-tag">li</span>
+                      <br>&nbsp;&nbsp; <span class="o-tag">li</span>JavaScript<span class="c-tag">li</span>
+                      <br><span class="c-tag">ol</span>
+                    </div>
+
                     <h3>HTML Images : </h3>
                     <p>HTML images are defined with the <span class="code">&lt;img&gt;</span> tag.</p>
                     <h4>Example :</h4>
@@ -596,8 +635,75 @@
                        
                     </ul>
                 </div>
+                <div id="html-styles">
+                  <h2>HTML Styles</h2>
+                  <p>The HTML <span class="code" style="color: red;">style</span> attribute is used to add styles to an element, such as color, font, size, and more.
+                  <br><b>Syntax :</b></p>
+                  <div id="html-code">
+                    <span class="o-tag">tagname <span class="attr">style</span><span class="attr-value">="<i>property:value;</i>"</span></span>
+                  </div>
+                  <ul><li><b>property</b> is a CSS property and <b>value</b> is a CSS value </li></ul>
+                  <div id="note">
+                    <b>Note :</b> We will learn more about CSS later.
+                  </div>
+                  <h3>Background Color : </h3>
+                  <p>The CSS <span style="color: red;" class="code">background-color</span> property defines the background color for an HTML element.</p>
+                  <h4>Example : </h4>
+                  <div id="html-code">
+                    <a target="blank" href="https://codepen.io/jacerchetoui56/pen/wvpXoEa" >Try It</a>
+                    <span class="o-tag">body <span class="attr">style</span><span class="attr-value">="background-color:red;"</span></span>
+                    <br><br><span class="o-tag">h1 <span class="attr">style</span><span class="attr-value">="background-color:yellow;"</span></span>this is a heading<span class="c-tag">h1</span>
+                    <br><br><span class="c-tag">body</span>
+                  </div>
+                  <h3>Text Color : </h3>
+                  <h4>Example : </h4>
+                  <p>
+                  The CSS <span class="code" style="color: red;">color</span> property defines the text color for an HTML element:
+                  </p>
+                  <div id="html-code">
+                    <a target="blank" href="https://codepen.io/jacerchetoui56/pen/eYyKBPG" >Try It</a>
+                    <span class="o-tag">h1 <span class="attr">style</span><span class="attr-value">="color:blue;"</span></span>this is a heading<span class="c-tag">h1</span>
+                    <br><span class="o-tag">p <span class="attr">style</span><span class="attr-value">="color:red;"</span></span>this is a paragraph<span class="c-tag">p</span>
+                  </div>
+                  <h3>Fonts : </h3>
+                  <p>The CSS <span class="code" style="color: red;">font-family</span> property defines the font to be used for an HTML element:</p>
+                  <h4>Example:</h4>
+                  <div id="html-code">
+                    <a target="blank" href="https://codepen.io/jacerchetoui56/pen/abEKBQG" >Try It</a>
+                    <span class="o-tag">h1 <span class="attr">style</span><span class="attr-value">="font-family:sans-serif;"</span></span>this is a heading<span class="c-tag">h1</span>
+                    <br><span class="o-tag">p <span class="attr">style</span><span class="attr-value">="font-family:courier;"</span></span>this is a paragraph<span class="c-tag">p</span>
+                  </div>
+                  <h3>Text Size : </h3>
+                  <p>The CSS <span class="code" style="color: red;">font-size</span> property defines the text size for an HTML element:</p>
+                  <h4>Example:</h4>
+                  <div id="html-code">
+                    <a target="blank" href="https://codepen.io/jacerchetoui56/pen/ExoRNGL" >Try It</a>
+                    <span class="o-tag">h1 <span class="attr">style</span><span class="attr-value">="font-size:3rem;"</span></span>this is a heading<span class="c-tag">h1</span>
+                    <br><span class="o-tag">p <span class="attr">style</span><span class="attr-value">="font-size:25px;"</span></span>this is a paragraph<span class="c-tag">p</span>
+                  </div>
+                  <h3>Text Alignement : </h3>
+                  <p>The CSS <span class="code" style="color: red;">text-align</span> property defines the horizontal text alignment for an HTML element:</p>
+                  <h4>Example:</h4>
+                  <div id="html-code">
+                    <a target="blank" href="https://codepen.io/jacerchetoui56/pen/WNdyoPG" >Try It</a>
+                    <span class="o-tag">h1 <span class="attr">style</span><span class="attr-value">="text-align:center;"</span></span>this is a heading<span class="c-tag">h1</span>
+                    <br><span class="o-tag">p <span class="attr">style</span><span class="attr-value">="text-align:center;"</span></span>this is a paragraph<span class="c-tag">p</span>
+                  </div>
+                </div>
                 <div id="html-classes-id">
-
+                  <h2>HTML Classes and ID</h2>
+                  <p>
+                    The HTML <span style="color: red;" class="code">class</span> attribute is used to specify a class for an HTML element.
+                  </p>
+                  <h3>Properties : </h3>
+                  <ul>
+                    <li>
+                      The <span style="color: red;" class="code">class</span> attribute is often used to point to a class name in a style sheet. It can also be used by a JavaScript to access and manipulate elements with the specific class name.
+                    </li>
+                    <li>
+                      Multiple HTML elements can share the same class.
+                    </li>
+                  </ul>
                 </div>
               </div>
               <div id="css-course">
