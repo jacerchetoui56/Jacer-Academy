@@ -63,3 +63,17 @@
 #html-code .comment {
   color: #0043ffc7;
 }
+
+#html-code .cla {
+  color: purple;
+}
+#html-code .prop {
+  color: red;
+}
+#html-code .val {
+  color: blue;
+}
+
+.csscomment {
+  color: green;
+}

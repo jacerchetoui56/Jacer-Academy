@@ -73,6 +73,7 @@
   background-color: #a2ff7c94;
   padding: 1rem;
   border-radius: 5px;
+  color: rgba(0, 0, 0, 0.877);
 }
 /* --------------- */
 .follower {
@@ -165,23 +166,17 @@
   background-color: purple;
 }
 /* !-------------- CSS ------- */
-#css-course,
-#js-course {
+#css-course {
   min-height: 100vh;
-  position: relative;
 }
-#css-course span,
-#js-course span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotateZ(-45deg);
-  font-size: 3.5rem;
-  color: #aaa;
+#css-course img {
+  max-height: 60%;
+  max-width: 50%;
 }
 
 /* !------------ JS ------------ */
 #js-course {
+  min-height: 100vh;
 }
 
 /* !------------ Media querries -------- */
@@ -204,5 +199,9 @@
   }
   * .course ul {
     padding-left: 1rem;
+  }
+  #css-course img {
+    max-height: 100%;
+    max-width: 80%;
   }
 }
