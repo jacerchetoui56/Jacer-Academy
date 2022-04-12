@@ -171,12 +171,21 @@
 }
 #css-course img {
   max-height: 60%;
-  max-width: 50%;
+  max-width: 65%;
 }
 
 /* !------------ JS ------------ */
 #js-course {
   min-height: 100vh;
+  position: relative;
+}
+#js-course span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: rgb(175, 175, 175);
+  font-size: 2.5rem;
+  transform: translate(-50%, -50%) rotateZ(-45deg);
 }
 
 /* !------------ Media querries -------- */
