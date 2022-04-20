@@ -8,6 +8,13 @@
     #6a5359
   );
   color: white;
+  position: relative;
+}
+#courses .separator{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 #courses a {
   color: white !important;

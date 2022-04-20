@@ -7,21 +7,12 @@
     font-family: sans-serif;
     position: relative;
 }
-
-#stats .split-top {
+#stats .separator{
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translate(-50%);
-    height: 2rem;
-    width: 4rem;
-}
-#stats .split-bottom{
-    position: absolute;
-    bottom: 0;
-    transform: translateY(100%);
-    color: #1F193D;
-}
+    transform: translateX(-50%);
+  }
 
 
 #stats h1{

@@ -5,9 +5,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+*::selection{
+  color: white ;
+  background-color: #343346;
+}
 html {
   scroll-behavior: smooth;
 }
+
 body {
   /* background-color: #e4e0e0ad; */
   animation: entry 0.7s;
