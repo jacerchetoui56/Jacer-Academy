@@ -54,6 +54,7 @@
   justify-content: space-around;
   align-items: center;
   gap: 4rem;
+  position: relative;
 }
 
 .front {
@@ -116,7 +117,8 @@
   padding: 0.4rem 1.7rem;
   transition: 0.3s;
 }
-.card:not(.card:first-child) .slide h2 {
+.ai .slide h2,
+.back .slide h2 {
   padding-left: 2.3rem;
   padding-right: 2.3rem;
 }
@@ -188,6 +190,30 @@
 .slide .description li:nth-child(4) i {
   margin-right: 0.5rem;
 }
+.courses-container .left,
+.courses-container .right {
+  position: absolute;
+  z-index: 10;
+  padding: 1rem 1.2rem;
+  display: none;
+  transition: 0.3s;
+  background-color: rgba(51, 51, 51, 0.438);
+  cursor: pointer;
+}
+.courses-container .left:hover,
+.courses-container .right:hover {
+  background-color: rgba(51, 51, 51, 0.808);
+}
+.courses-container .right {
+  top: 40%;
+  right: 0.3rem;
+}
+.courses-container .left {
+  top: 40%;
+  left: 0.3rem;
+}
+
+
 
 /* !---------- media querry ----------------- */
 
@@ -197,16 +223,6 @@
   }
 }
 @media (max-width: 920px) {
-  .courses-container {
-    flex-direction: column;
-    justify-content: center;
-    align-items: space-around;
-    padding-bottom: 3rem;
-  }
-  .courses-container .card {
-    width: 250px;
-    min-height: 25rem;
-  }
   .card .slide {
     min-height: 25rem;
   }
@@ -217,11 +233,35 @@
     margin-bottom: 4rem;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 700px) {
+  .courses-container .left,
+  .courses-container .right {
+    display: block;
+  }
   .courses-container .card {
+    position: absolute;
+    top: 15%;
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    min-width: 300px;
+    min-height: 30rem;
+    transition: 0.7s !important;
+    opacity: 0 !important;
+  }
+  .courses-container .card .slide {
+    min-height: 30rem;
+    z-index: 5;
+  }
+  .courses-container .card.show {
+    opacity: 1 !important;
+    z-index: 3 !important;
+  }
+}
+@media (max-width: 550px) {
+  /* .courses-container .card {
     width: 85%;
     min-height: 30rem;
-  }
+  } */
   .card .slide {
     min-height: 30rem !important;
   }

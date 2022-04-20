@@ -59,3 +59,30 @@ function startCounting(el){
         if(el.textContent == goal) clearInterval(count)
     }, 2000 / goal);
 }
+
+
+
+const next = document.querySelector(".left")
+const previous = document.querySelector(".right")
+const cards = document.querySelectorAll("#courses .card")
+let j=0
+next.addEventListener('click',()=>{ 
+    cards[j].classList.add("show")
+    cards[j].style.opacity = '1'
+    for(let i=0;i<3;i++){
+        if(i!=j) cards[i].classList.remove('show')
+    }
+    if(j<2) j++
+    else j=0
+})
+previous.addEventListener('click',()=>{ 
+    if(j>0) j--
+    else j=2
+    cards[j].classList.add("show")
+    for(let i=0;i<3;i++){
+        if(i!=j) cards[i].classList.remove('show')
+    }
+    if(j>0) j--
+    else j=2
+})
+
