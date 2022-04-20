@@ -14,7 +14,16 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  animation: entery .5s ease-in-out;
   font-family: sans-serif;
+}
+@keyframes entery {
+  from{
+    opacity: .5;
+  }
+  to {
+    opacity: 1;
+  }
 }
 a {
   text-decoration: none;
