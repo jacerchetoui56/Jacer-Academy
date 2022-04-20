@@ -10,9 +10,11 @@
     font-size: 1.1rem;
 }
 #intro img{
-    transition: .2s;
+    transition: .5s;
 }
 #intro img:hover {
+    transform: scale(.8);
+
 }
 #intro .one{
     display: block;

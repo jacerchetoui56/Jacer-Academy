@@ -41,6 +41,10 @@
 }
 #how .card img{
     width: min(6rem, 100%);
+    transition: .5s;
+}
+#how .card img:hover{
+    transform: scale(.8);
 }
 #how .card{
     padding: 2rem ;
